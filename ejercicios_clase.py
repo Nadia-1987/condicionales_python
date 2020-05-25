@@ -15,8 +15,7 @@ __email__ = "alumnos@inove.com.ar"
 __version__ = "1.1"
 
 def ej1():
-    # Ejercicios de práctica numérica
-    
+    # Ejercicios de práctica numérica    
     # Comparadores
     # Ingrese dos números cualesquiera y realice las sigueintes
     # comparaciones entre ellos
@@ -26,17 +25,34 @@ def ej1():
     
     # Compare cual de los dos números es mayor
     # Imprima en pantalla según corresponda
+    if numero_1 > numero_2:
+        print('"numero_1=',numero_1,'" es mayor a "numero_2=',numero_2,'"')
+    else: 
+        print('"numero_1=',numero_1,'" es mayor a numero_2=',numero_2,'"')
 
     # Verifique si el numero_1 positivo, negativo o cero
+    if numero_1 < 0:
+        print('"numero_1"es negativo')
+    elif numero_1 > 0:
+        print('numero_1"es positivo')
+    else: 
+        print('numero_1"es igual a cero')
+
+
     # Imprima el resultado en cada caso
 
 
     # Verifique si el numero_1 es mayor a 0 y menor a 100
+    if (numero_1 > 0 and numero_1 < 100):
+        print('correcto!')
+    
     # Imprima en pantalla si se cumple o no la condición
 
     # Verifique si el numero_1 es menor a 10 o el numero_2
     # es mayor a -2
     # Imprima en pantalla si se cumple o no la condición
+    if (numero_1 < 10 or numero_2 > -2):   
+        print('correcto!')
 
 def ej2():
     # Ejemplos variables de texto
@@ -124,7 +140,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
+    ej1()
     #ej2()
     #ej3()
     #ej4()

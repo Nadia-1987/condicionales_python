@@ -34,7 +34,7 @@ def ej1():
     
 
 def ej2():
-# Ejercicios de práctica con números
+    # Ejercicios de práctica con números
 
     numero_1 = int(input('Ingrese un numero entero:\n'))
     numero_2 = int(input('Ingrese un numero entero:\n'))
@@ -131,8 +131,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    #ej2()
+    #ej1()
+    ej2()
     #ej3()
     #ej4()
     #ej5()

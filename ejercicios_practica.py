@@ -58,13 +58,13 @@ def ej2():
 def ej3():
     # Ejercicios de práctica con números
 
-    primer_numero = 10
-    segundo_numero = 20
-    suma = primer_numero + segundo_numero
-    resta = primer_numero - segundo_numero
-    multiplicacion = primer_numero * segundo_numero
-    division = primer_numero / segundo_numero
-    exponente = primer_numero ** segundo_numero
+    numero_1 = 10
+    numero_2 = 20
+    suma = numero_1 + numero_2
+    resta = numero_1 - numero_2
+    multiplicacion = numero_1 * numero_2
+    division = numero_1 / numero_2
+    exponente = numero_1 ** numero_2
     
     operador = str(input('Ingrese el simbolo de la operacion que desee operar:\n'))
     if operador == '+':
@@ -132,7 +132,7 @@ def ej5():
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
-    ej2()
-    #ej3()
+    #ej2()
+    ej3()
     #ej4()
     #ej5()

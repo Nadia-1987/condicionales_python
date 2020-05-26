@@ -182,6 +182,7 @@ else:
                 if puntaje < 60:     
                     print('F')
 
+
 def ej4():
     # Ejemplos variables de texto
 
@@ -222,7 +223,7 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
-    ej2()
-    #ej3()
+    #ej2()
+    ej3()
     #ej4()
 

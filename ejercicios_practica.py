@@ -17,31 +17,49 @@ __version__ = "1.1"
 def ej1():
     # Ejercicios de práctica con números
 
-    '''
-    Realice un programa que solicite por consola 2 números
-    Calcule la diferencia entre ellos e informe por pantalla
-    si el resultado es positivo, negativo o cero.
+    
+
+  numero_1 = int(input('ingrese el primer numero:\n'))
+  numero_2 = int(input('ingrese el segundo numero:\n'))
+
+  if (numero_1 + numero_1) / 2 == > 0:
+    print('el numero es positivo')
+  elif (numero_1 + numero_2) / 2 == < 0:
+    print('el numero es negativo')
+  else:
+    print('el numero es cero')
+
         
-    '''
+    
 
 def ej2():
 # Ejercicios de práctica con números
 
-  '''
-    Realice un programa que solicite el ingreso de tres números
-    enteros, y luego en cada caso informe si el número es par
-    o impar.
-    Para cada caso imprimir el resultado en pantalla.
-    
-  '''
+  numero_1 = int(input('Ingrese un numero entero:\n'))
+  numero_2 = int(input('Ingrese un numero entero:\n'))
+  numero_3 = int(input('Ingrese un numero entero:\n'))
+
+  if numero_1 % 2 == 0:
+    print('el numero es par')
+  else:
+    print('el numero es impar')´
+  
+  if numero_2 % 2 == 0:
+    print('el numero es par')
+  else:
+    print('el numero es impar')
+
+   if numero_3 % 2 == 0:
+     print('el numero es par')
+  else:
+    print('el numero es impar')
 
 def ej3():
     # Ejercicios de práctica con números
 
-    '''
-    Realice una calculadora, se ingresará por línea de comando dos números
-    Luego se ingresará como tercera entrada al programa el símbolo de la operación
-    que se desea ejecutar
+    primer_numero = 10
+    segundo_numero = 20
+    
     - Suma (+)
     - Resta (-)
     - Multiplicación (*)
@@ -57,8 +75,12 @@ def ej3():
 def ej4():
     # Ejercicios de práctica con cadenas
     
-    '''
-    Realice un programa que solicite por consola 3 palabras cualesquiera
+    
+
+    palabra_1 = str(input('Ingrese palabra 1'))
+    palabra_2 = str(input('Ingrese palabra 2'))
+    palabra_3 = str(input('Ingrese palabra 3'))
+
     Luego el programa debe consultar al usuario como quiere ordenar las palabras
     1 - Ordenar por orden alfabético (usando el operador ">")
     2 - Ordenar por cantidad de letras (longitud de la palabra)
@@ -80,6 +102,10 @@ def ej5():
     1 - ¿Cuáles de ellas es la máxima temperatura ingresada?
     2 - ¿Cuáles de ellas es la mínima temperatura ingresada?
     3 - ¿Cuál es el promedio de las temperaturas ingresadas?
+
+    temperatura_1 = int(input('Ingrese temperatura 1'))
+    temperatura_2 = int(input('Ingrese temperatura 2'))
+    temperatura_3 = int(input('Ingrese temperatura 3'))
 
     En cada caso imprimir en pantalla el resultado  
 

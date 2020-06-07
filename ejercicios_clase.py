@@ -79,7 +79,7 @@ def ej2():
     
 
     if len(texto_1) > len(texto_2):
-        print('la palabra que tiene mayor cantidad de letras es=',texto_2)
+        print('la palabra que tiene mayor cantidad de letras es=',texto_1)
     else:
         print('la palabra que tiene mayor cantidad de letras es=',texto_2)
         
@@ -94,7 +94,10 @@ def ej2():
     if(texto_1[0]) > (texto_2[0]):
         print('La primera letra de',texto_1,'es mayor a la primera letra de',texto_2)
     else:
-        print('La primera letra de',texto_2,'es mayor a la primera letra de',texto_1)
+        if (texto_1[0]) < (texto_2[0]):
+            print('La primera letra de',texto_2,'es mayor a la primera letra de',texto_1)
+        else:
+            print('Las dos primeras letras son iguales')
 
 
     copia_texto_1 = texto_1  # Copia de la variable texto_1
@@ -225,5 +228,5 @@ if __name__ == '__main__':
     #ej1()
     #ej2()
     #ej3()
-    ej4()
+    #ej4()
 

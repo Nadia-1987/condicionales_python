@@ -91,12 +91,41 @@ def ej4():
     
     
 
-    palabra_1 = str(input('Ingrese palabra 1'))
-    palabra_2 = str(input('Ingrese palabra 2'))
-    palabra_3 = str(input('Ingrese palabra 3'))
-    consulta_orden = int(input('Ingrese 1 para ordenar alfabeticamente o 2 por longitud de palabra: '))
+    palabra_1 = str(input('Ingrese palabra 1:\n'))
+    palabra_2 = str(input('Ingrese palabra 2:\n'))
+    palabra_3 = str(input('Ingrese palabra 3:\n'))
+    consulta_orden = int(input('Ingrese 1 para ordenar alfabeticamente o 2 por longitud de palabra:\n'))
 
-    
+    if consulta_orden == 1:
+        if palabra_1 > palabra_2 and palabra_1 > palabra_3 and palabra_2 > palabra_3:
+            print(palabra_1, palabra_2, palabra_3)
+        elif palabra_1 > palabra_2 and palabra_1 > palabra_3 and palabra_3 > palabra_2:
+            print(palabra_1, palabra_3, palabra_2) 
+        elif palabra_2 > palabra_1 and palabra_2 > palabra_3 and palabra_3 > palabra_1:
+            print(palabra_2, palabra_3, palabra_1 ) 
+        elif palabra_2 > palabra_1 and palabra_2 > palabra_3 and palabra_1 > palabra_3:
+            print(palabra_2, palabra_1, palabra_3 )
+        elif palabra_3 > palabra_1 and palabra_3 > palabra_2 and palabra_2 > palabra_1:
+            print(palabra_3, palabra_2, palabra_1 )    
+        elif palabra_3 > palabra_1 and palabra_3 > palabra_2 and palabra_1 > palabra_2:
+            print(palabra_3, palabra_1, palabra_2)   
+
+    elif consulta_orden == 2:
+
+        if len(palabra_1) > len(palabra_2) and palabra_1 > palabra_3 and palabra_2 > palabra_3:
+            print(palabra_1, palabra_2, palabra_3)
+        elif len(palabra_1) > len(palabra_2) and len(palabra_1) > len(palabra_3) and len(palabra_3) > len(palabra_2):
+            print(palabra_1, palabra_3, palabra_2) 
+        elif len(palabra_2) > len(palabra_1) and len(palabra_2) > len(palabra_3) and len(palabra_3) > len(palabra_1):
+            print(palabra_2, palabra_3, palabra_1) 
+        elif len(palabra_2) > len(palabra_1) and len(palabra_2) > len(palabra_3) and len(palabra_1) > len(palabra_3):
+            print(palabra_2, palabra_1, palabra_3)
+        elif len(palabra_3) > len(palabra_1) and len(palabra_3) > len(palabra_2) and len(palabra_2) > len(palabra_1):
+            print(palabra_3, palabra_2, palabra_1)    
+        elif len(palabra_3) > len(palabra_1) and len(palabra_3) > len(palabra_2) and len(palabra_1) > len(palabra_2):
+            print(palabra_3, palabra_1, palabra_2) 
+
+        
     #Luego el programa debe consultar al usuario como quiere ordenar las palabras
     #1 - Ordenar por orden alfabético (usando el operador ">")
     #2 - Ordenar por cantidad de letras (longitud de la palabra)
@@ -114,9 +143,9 @@ def ej5():
        
     
 
-    temperatura_1 = int(input('Ingrese temperatura 1'))
-    temperatura_2 = int(input('Ingrese temperatura 2'))
-    temperatura_3 = int(input('Ingrese temperatura 3'))
+    temperatura_1 = int(input('Ingrese temperatura 1:\n'))
+    temperatura_2 = int(input('Ingrese temperatura 2:\n'))
+    temperatura_3 = int(input('Ingrese temperatura 3:\n'))
 
     if temperatura_1 > temperatura_2 and temperatura_1 > temperatura_3:
         print(temperatura_1,'es la mayor') 
@@ -127,7 +156,17 @@ def ej5():
             if temperatura_3 > temperatura_1 and temperatura_3 > temperatura_2:
                 print(temperatura_3,'es la mayor')
 
-    
+    if temperatura_1 < temperatura_2 and temperatura_1 < temperatura_3:
+        print(temperatura_1,'es la menor') 
+    else:
+        if temperatura_2 < temperatura_1 and temperatura_2 < temperatura_3:
+            print(temperatura_2,'es la menor')
+        else:
+            if temperatura_3 < temperatura_1 and temperatura_3 < temperatura_2:
+                print(temperatura_3,'es la menor')
+
+    promedio = (temperatura_1 + temperatura_2 + temperatura_3) / 3
+    print(promedio)
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
